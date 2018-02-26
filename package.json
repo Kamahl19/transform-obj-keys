@@ -9,13 +9,16 @@
     "email": "kamahl19@gmail.com",
     "url": "http://litvaj.com"
   },
+  "main": "index.js",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "npm test && rimraf dist && babel src -d dist"
   },
   "files": [
+    "dist",
     "index.js"
   ],
   "keywords": [
@@ -64,6 +67,10 @@
   },
   "devDependencies": {
     "ava": "*",
-    "camelcase": "*"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "camelcase": "*",
+    "rimraf": "^2.6.2"
   }
 }
