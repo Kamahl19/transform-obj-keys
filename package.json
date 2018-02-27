@@ -1,6 +1,6 @@
 {
   "name": "transform-obj-keys",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Transform object keys easily using whatever transform function",
   "license": "MIT",
   "repository": "Kamahl19/transform-obj-keys",
@@ -62,8 +62,7 @@
     "recursive"
   ],
   "dependencies": {
-    "map-obj": "^2.0.0",
-    "quick-lru": "^1.0.0"
+    "map-obj": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -72,7 +71,6 @@
     "babel-eslint": "^8.0.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "eslint": "^4.13.1",

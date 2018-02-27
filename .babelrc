@@ -3,7 +3,6 @@
     "env"
   ],
   "plugins": [
-    "babel-plugin-add-module-exports",
-    "transform-runtime"
+    "babel-plugin-add-module-exports"
   ]
 }

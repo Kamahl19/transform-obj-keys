@@ -12,7 +12,7 @@ const outputFile = env === 'build' ? pkg.name + '.min.js' : pkg.name + '.js';
 const plugins = [
   new BabelEnginePlugin({
     presets: ['env'],
-    plugins: ['babel-plugin-add-module-exports', 'transform-runtime'],
+    plugins: ['babel-plugin-add-module-exports'],
   }),
 ];
 
