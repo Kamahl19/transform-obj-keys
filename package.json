@@ -1,26 +1,26 @@
 {
   "name": "transform-obj-keys",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Transform object keys easily using whatever transform function",
   "license": "MIT",
   "repository": "Kamahl19/transform-obj-keys",
+  "bugs": {
+    "url": "https://github.com/kamahl19/transform-obj-keys/issues"
+  },
+  "homepage": "https://github.com/kamahl19/transform-obj-keys",
   "author": {
     "name": "Martin Litvaj",
     "email": "kamahl19@gmail.com",
     "url": "http://litvaj.com"
   },
-  "main": "index.js",
-  "engines": {
-    "node": ">=6"
-  },
+  "main": "lib/transform-obj-keys.js",
   "scripts": {
-    "test": "ava",
-    "build": "npm test && rimraf dist && babel src -d dist"
+    "build": "webpack --env dev && webpack --env build && npm test",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js",
+    "prettier": "prettier --write \"{src,test}/**/*.js\""
   },
-  "files": [
-    "dist",
-    "index.js"
-  ],
   "keywords": [
     "map",
     "obj",
@@ -66,11 +66,22 @@
     "quick-lru": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "*",
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-engine-plugin": "^0.2.1",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "camelcase": "*",
-    "rimraf": "^2.6.2"
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "mocha": "^5.0.1",
+    "prettier": "^1.11.0",
+    "webpack": "^3.10.0",
+    "yargs": "^11.0.0"
   }
 }
