@@ -1,6 +1,6 @@
 {
   "name": "transform-obj-keys",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Transform object keys easily using whatever transform function",
   "license": "MIT",
   "repository": "Kamahl19/transform-obj-keys",
