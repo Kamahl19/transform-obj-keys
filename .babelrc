@@ -1,20 +1,9 @@
 {
   "presets": [
-    [
-      "env",
-      {
-        "useBuiltIns": false
-      }
-    ]
+    "env"
   ],
   "plugins": [
     "babel-plugin-add-module-exports",
-    [
-      "transform-runtime",
-      {
-        "polyfill": false,
-        "regenerator": true
-      }
-    ]
+    "transform-runtime"
   ]
 }
