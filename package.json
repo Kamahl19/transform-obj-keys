@@ -1,6 +1,6 @@
 {
   "name": "transform-obj-keys",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Transform object keys easily using whatever transform function",
   "license": "MIT",
   "repository": "Kamahl19/transform-obj-keys",
@@ -62,24 +62,24 @@
     "recursive"
   ],
   "dependencies": {
-    "map-obj": "^2.0.0"
+    "map-obj": "^3.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-engine-plugin": "^0.2.1",
-    "babel-eslint": "^8.0.3",
-    "babel-loader": "^7.1.2",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^7.1.5",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.1.2",
-    "eslint": "^4.13.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "mocha": "^5.0.1",
-    "prettier": "^1.11.0",
+    "eslint": "^5.5.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.2",
     "webpack": "^3.10.0",
-    "yargs": "^11.0.0"
+    "yargs": "^12.0.1"
   }
 }
